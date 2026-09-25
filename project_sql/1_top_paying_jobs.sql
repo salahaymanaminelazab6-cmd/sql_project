@@ -1,11 +1,26 @@
-"job_id","job_title","job_location","job_schedule_type","job_work_from_home","salary_year_avg","job_posted_date","company_name"
-226942,"Data Analyst","Anywhere","Full-time",1,"650000.0","2023-02-20 15:13:33","Mantys"
-547382,"Director of Analytics","Anywhere","Full-time",1,"336500.0","2023-08-23 12:04:42","Meta"
-552322,"Associate Director- Data Insights","Anywhere","Full-time",1,"255829.5","2023-06-18 16:03:12","AT&T"
-99305,"Data Analyst, Marketing","Anywhere","Full-time",1,"232423.0","2023-12-05 20:00:40","Pinterest Job Advertisements"
-1021647,"Data Analyst (Hybrid/Remote)","Anywhere","Full-time",1,"217000.0","2023-01-17 00:17:23","Uclahealthcareers"
-168310,"Principal Data Analyst (Remote)","Anywhere","Full-time",1,"205000.0","2023-08-09 11:00:01","SmartAsset"
-731368,"Director, Data Analyst - HYBRID","Anywhere","Full-time",1,"189309.0","2023-12-07 15:00:13","Inclusively"
-310660,"Principal Data Analyst, AV Performance Analysis","Anywhere","Full-time",1,"189000.0","2023-01-05 00:00:25","Motional"
-1749593,"Principal Data Analyst","Anywhere","Full-time",1,"186000.0","2023-07-11 16:00:05","SmartAsset"
-387860,"ERM Data Analyst","Anywhere","Full-time",1,"184000.0","2023-06-09 08:01:04","Get It Recruit - Information Technology"
+/*
+ Question: What are the top-paying data analyst jobs?
+ - Identify the top 10 highest-paying Data Analyst roles that are available remotely.
+ - Focuses on job postings with specified salaries (remove nulls).
+ - Why? Highlight the top-paying opportunities for Data Analysts, offering insights into employment.
+ */
+SELECT job_id,
+  job_title,
+  job_location,
+  job_schedule_type,
+  salary_year_avg,
+  job_posted_date,
+  name AS conpany_name
+FROM job_postings_fact
+  LEFT JOIN company_dim ON job_postings_fact.company_id = company_dim.company_id
+WHERE job_title_short = 'Data Analyst'
+  AND job_location = 'Anywere'
+  AND salary_year_avg IS NOT NULL
+ORDER BY salary_year_avg DESC
+LIMIT 10
+  /*
+   The Data Analyst position at Mantys, with a salary of $650K, represents exceptional value compared to the other roles.
+   The second-highest salary is $336.5K, indicating a very significant gap between the top two positions.
+   Eight out of the ten positions fall roughly within the $184K to $256K range.
+   This means the average salary of $264.5K is clearly skewed by the exceptional $650K figure; therefore, the median of $211K provides a more representative picture of the typical roles on this list.
+   */
