@@ -61,7 +61,7 @@ Here's the breakdown of the top data analyst jobs in 2023:
 - **Diverse Employers:** Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
 - **Job Title Variety:** There's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
 
-![Top Paying jobs](assets\Top_Paying_Jobs.png)
+![Top Paying jobs](assets/Top_Paying_Jobs.png)
 
 Bar graph visualizing the salary for the top 10
 salaries for data analysts; ChatGPT generated this
@@ -102,7 +102,7 @@ ORDER BY salary_year_avg DESC
 - **Power BI** appears in 2 jobs (25%).
 - **Cloud** technologies such as Azure, AWS, and Oracle appear in 2 jobs each (25%).
 
-![Top Paying Job Skills](assets\2_top_paying_job_skills.png)
+![Top Paying Job Skills](assets/2_top_paying_job_skills.png)
 
 High-paying Data Analyst roles tend to combine strong foundational analytical skills such as SQL and Python with BI, cloud, and programming technologies. SQL and Python have the broadest presence, while specialized cloud and data-engineering skills appear less frequently but are associated with higher salaries in this particular sample. However, the sample contains only 8 jobs, so these salary associations should be treated as descriptive rather than causal.
 
@@ -141,7 +141,7 @@ LIMIT 5
 - **SQL** demand is approximately 1.6× higher than **Excel** and 2.8× higher than **Power BI**, highlighting the strong importance of **SQL** in Data Analyst roles.
 - The top five skills are dominated by data querying, spreadsheet analysis, programming, and business intelligence tools, indicating that employers commonly seek a combination of technical and analytical capabilities.
 
-![In Demand Skills For Data Analysts](assets\3_In_Demand_Skills_For_Data_Analysts.png)
+![In Demand Skills For Data Analysts](assets/3_In_Demand_Skills_For_Data_Analysts.png)
 
 SQL is the core skill in the Data Analyst job market, with demand substantially exceeding every other skill. Excel and Python follow closely, while Tableau and Power BI represent important Business Intelligence and visualization capabilities.
 | Rank | Skill | Job Postings |
@@ -184,7 +184,7 @@ helps identify the most financially rewarding skills of acquire or improve
 - However, these figures represent average salaries for job postings containing each
   skill and should not be interpreted as the salary premium caused by the skill itself. Experience, seniority, location, company, and job responsibilities may also influence compensation.
 
-![top paying skills](assets\top_paying_skills.png)
+![top paying skills](assets/top_paying_skills.png)
 The data shows a substantial salary gap between the highest-paying skills and the rest of the top 25. SVN is particularly unusual at $400K, while most of the other high-paying skills cluster between roughly $115K and $180K.
 | Rank | Skill | Average Annual Salary |
 | ---: | ------------ | --------------------: |
@@ -284,8 +284,8 @@ LIMIT 25
 - The relationship between skill demand and salary is weakly negative in this dataset (correlation ≈ -0.12), meaning that being more frequently requested does not automatically translate into a higher average salary.
 - Cloud and engineering-oriented technologies such as AWS, Azure, Snowflake, Hadoop, and Go appear less frequently than core analyst tools but are associated with relatively high average salaries.
 
-![Most Optimal skills to learn](assets\Most_Optimal_skills_to_learn.png)
-![Most Optimal skills to learn5](assets\Most_Optimal_skills_to_learn5.png)
+![Most Optimal skills to learn](assets/Most_Optimal_skills_to_learn.png)
+![Most Optimal skills to learn5](assets/Most_Optimal_skills_to_learn5.png)
 
 The remote Data Analyst market shows a clear distinction between high-demand foundational skills and higher-paid specialized technologies. SQL, Excel, Python, and Tableau dominate demand, while skills such as Go, Hadoop, Snowflake, and Azure are associated with higher average salaries despite lower demand.
 
